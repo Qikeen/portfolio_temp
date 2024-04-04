@@ -1,0 +1,94 @@
+
+---
+count: 25
+color: cadetblue
+list: [1, 2, 3, 4, "boo"]
+
+---
+
+<head>
+	<title>Rainn.ee</title>
+</head>
+
+<script>
+import {Deck, Card} from '$lib'
+let activee = 'web'
+
+let web = true
+let ani = false
+let gfx = false
+
+function activeDeck (sel){
+	if (sel == 'web'){
+		web = true
+		ani = false
+		gfx = false
+	 }else if (sel == 'ani'){
+		web = false
+		ani = true
+		gfx = false
+	 }else if (sel == 'gfx'){
+		web = false
+		ani = false
+		gfx = true
+	 }else {
+		print('error: nothing selected')
+	}
+}
+
+$: activeDeck(activee)
+</script>
+
+<style>
+	.hidden{
+		display: none;
+	}
+
+</style>
+
+
+# Hi I'm Raine
+
+## Welcome to my website
+
+### I'm a web developer, animator and graphic designer. 
+
+
+### I like applying traditional techniques with modern technology. 
+Traditional techniques relied on simplifying processes to the point that there is little room for error. This allowed the artist more room to focus on being creative. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project.
+
+### I turn ideas into powerful digital experiences. 
+I believe in creating things that stand out. Things that are different and unexpected. Trends will come and go, I try to create things that are timeless, that stay interesting and relevant for as long as possible. 
+
+	<input type="radio" name='active' id='web' value='web' bind:group={activee}/>
+	<input type="radio" name='active' id='ani' value='ani' bind:group={activee}/>
+	<input type="radio" name='active' id='gfx' value='gfx' bind:group={activee}/>
+
+
+<Deck hidden={!web}>
+	<Card --bg-color=grey>
+     <enhanced:img src='$lib/images/Alchemythology.jpg?' />	
+     <p>this is me
+     </p>
+	</Card>
+	<Card>
+     <enhanced:img src='$lib/images/Skoolist.jpg?' />	
+     <p>this is me
+     </p>
+	</Card>
+	<Card>
+	 <enhanced:img src='$lib/images/Alchemythology.jpg?' />	
+     <p>this is me
+     </p>
+	</Card>
+	<Card>
+     <enhanced:img src='$lib/images/Skoolist.jpg?' />	
+     <p>this is me
+     </p>
+	</Card>
+
+</Deck>
+
+
+
+<a href='/posts'> test md </a>
