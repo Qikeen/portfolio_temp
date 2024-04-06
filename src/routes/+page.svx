@@ -44,48 +44,116 @@ $: activeDeck(activee)
 		display: none;
 	}
 
+	input{
+		margin:15px;
+	}
+	label{
+		margin-left:-15px;
+	}
+	h2{
+		margin-bottom:-10px;
+	}
+
+
 </style>
 
 
-# Hi I'm Raine
+# Hi I'm Raine <sub><sub><sub><sup>*also known as Ray*</sup></sub></sub></sub>
 
 ## Welcome to my website
+<sup><sup>~i'm working on making a better one, but this'll do for now~</sup></sup>
+
+## A little bit about me
 
 ### I'm a web developer, animator and graphic designer. 
+I also have experience in electronics, software development, 3d modeling, game dev, IT support, live audio mixing, event management, painting, construction, etc<sub>etc<sub>etc</sub></sub>, but let's just stick to these main 3 for now.
 
-
-### I like applying traditional techniques with modern technology. 
-Traditional techniques relied on simplifying processes to the point that there is little room for error. This allowed the artist more room to focus on being creative. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project.
+### I like applying traditional techniques to modern technology. 
+Traditional techniques relied on simplifying processes to the point that there is little room for error when diving into projects. This allowed the artist to focus on being creative, rather than focusing on fixing each and every mistake. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project. <sub><sup>not just fixing bugs</sup></sub>
 
 ### I turn ideas into powerful digital experiences. 
-I believe in creating things that stand out. Things that are different and unexpected. Trends will come and go, I try to create things that are timeless, that stay interesting and relevant for as long as possible. 
+I believe in creating things that stand out. Things that are different and unexpected. I tend to take the road less travelled and forge my own path, but I'll still occasionally take a look at the main road to make sure I'm going the right direction <sup><sub>lol</sub></sup>. I'll admit, sometimes it's good to follow trends, but other times i'm good just watching and taking inspiration for my own ideas. 
 
-	<input type="radio" name='active' id='web' value='web' bind:group={activee}/>
-	<input type="radio" name='active' id='ani' value='ani' bind:group={activee}/>
-	<input type="radio" name='active' id='gfx' value='gfx' bind:group={activee}/>
 
+## My Work 
+==*hover for more details*==
+
+<div style="text-align: center;">
+	<input type="radio" name='active' id='web' value='web' bind:group={activee}> <label for='web'> Web Development</label>
+	<input type="radio" name='active' id='ani' value='ani' bind:group={activee}> <label for='ani'> Animation </label>
+	<input type="radio" name='active' id='gfx' value='gfx' bind:group={activee}> <label for='gfx'> Graphic Design</label>
+</div>
 
 <Deck hidden={!web}>
-	<Card --bg-color=grey>
+	<Card --bg-color='#D9CB9A'>
      <enhanced:img src='$lib/images/Alchemythology.jpg?' />	
-     <p>this is me
-     </p>
+     <p>Alchemythology (al-chem-myth-ology)is a combination of the words alchemy and mythology, and refers to the fusion of mythical creatures with the purpose of creating something new, unique and oftentimes ridiculous.</p>
+     <p>I created this project in 2020 for my internet studio II final at UTD. </p>
+     <a href='https://docs.google.com/presentation/d/1Pxy1dMqoJvHdZHQtplT4h8H4ubXnvueHJLo9VfeQjS0/edit?usp=sharing'> Pitch Deck</a>
 	</Card>
-	<Card>
+	<Card --bg-color='#000000' --text-color='white'>
      <enhanced:img src='$lib/images/Skoolist.jpg?' />	
-     <p>this is me
-     </p>
+     <p>Students have a hard enough time keeping up with assignments without a massive pandemic going on. </p>
+	 <p>Skoolist aims to help students of all ages keep track of their assignments and classes, while also giving them a place to communicate with their peers.</p>
+	 <p>I created this app concept during Fall 2021 semester for a visual application design course at UTD </p>
+	 <a href='https://docs.google.com/presentation/d/1Yw1ZzjpwNSNBOpth5kVCpxmwBiorqyBFZIc8yB-ph9w/edit?usp=sharing'> Pitch Deck </a>
+	 <a href='https://projects.invisionapp.com/share/7NZCYL3AGHE#/screens/437104834'> Prototype </a>
+	 </Card>
+
+</Deck>
+
+<Deck hidden={!ani}>
+	<Card --bg-color='#F4EFE9'>
+     <enhanced:img src='$lib/images/DemoReel2023.jpg?' />	
+     <p>This is my demo reel that I created during my final semester for the Level II Animation Certification from Dallas College.</p>
+     <a href='https://www.youtube.com/watch?v=qVN9xc6O4po'> YouTube</a>
+     <p> Music Used: 'Afterparty' by Don Toliver. I do not own the rights to the music used.</p>
 	</Card>
-	<Card>
-	 <enhanced:img src='$lib/images/Alchemythology.jpg?' />	
-     <p>this is me
-     </p>
+	<Card --bg-color='#E0E0E0'>
+     <enhanced:img src='$lib/images/PaperMusicAnim.jpg?' />	
+     <p>This animation was created using construction paper that I cut into various shapes and placed on a green screen. I then edited the video and music using DaVinci Resolve.</p>
+     <p>I made this animation for a creative video editing course at UTD. </p>
+	 <a href='https://drive.google.com/file/d/1gatJv0pPe8m2XnUy2Zd-eNLpnFVVKaML/view?usp=sharing'> Google Drive </a>
+     <p>  Music Used: 'Lalala' by bbno$, Bassthoven by 'Kyle Exum'. I do not own the rights to the music used. </p>
+	 </Card>
+	 <Card --bg-color='#706E70' --text-color='white'>
+     <enhanced:img src='$lib/images/Afterparty.jpg?' />	
+     <p>Capybaras doing stuff with the song "Afterparty" behind it was a semi popular meme for a while in 2022, that's what inspired me to create this lyric video. </p>
+     <p>I made this animation for an assignment in a video editing course at Dallas College. </p>
+	 <a href='https://drive.google.com/file/d/1qX_mA4KADkE13dtDCmmrwQCHZVhjjL_v/view?usp=sharing'> Google Drive </a>
+     <p>  Music Used: 'Afterparty' by Don Toliver. I do not own the rights to the music used. </p>
+	 </Card>
+
+</Deck>
+
+<Deck hidden={!gfx}>
+	<Card --bg-color='#009FD4' --text-color='white'>
+     <enhanced:img src='$lib/images/LemurLemon.jpg?' />	
+     <p>Lemur Lemonade was a semester long project to create a concept for a creative food truck business that was outside what you'd normally expect from that type of business.For this project I created a variety of designs, including marketing materials, menus, vehicle wraps, and (most importantly) a logo.</p>
+     <p>I worked on this project in Fall 2022 for a visual media course at UTD. </p>
+     <a href='https://www.behance.net/gallery/195635229/Lemur-Lemonade'> Behance</a>
 	</Card>
-	<Card>
-     <enhanced:img src='$lib/images/Skoolist.jpg?' />	
-     <p>this is me
-     </p>
+	<Card --bg-color='#D1C9B4'>
+     <enhanced:img src='$lib/images/Vandhalia.jpg?' />	
+     <p>I based this project on the D&D campaign that I was playing in where the players are all students at an adventuring academy. This is a catalog that a prospective student would be sent in the mail that gives some basic information about the college. All of the dates, currencies, and pricing are as accurate as possible relative to the official content posted by Wizards of the Coast for use in D&D. All of the majors are the ofiicial classes from D&D.</p>
+	 <p>I made this ctalog in Fall 2021 for Project 3 in a graphic design course at UTD </p>
+	 <a href='https://raywofforddesign.wordpress.com/project-3-catalog/'> Project Page </a>
+	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
+	 </Card>
+	 <Card --bg-color='#000000' --text-color='white'>
+     <enhanced:img src='$lib/images/2point5Gum.jpg?' />	
+     <p>For this project I created a package design for a pack of chewing gum. I was inspired by the packaging for 5 gum and decided to create 2.5 gum. My favorite flavor of 5 gum is wintermint, which 5 calls “ascent” so I decided to create the opposite for 2.5 gum which is a cinnamon flavor called “descent”. My thought process for this was that cinnamon is spicy, spicy is hot, and hot is the opposite of cold and wintermint is cold. </p>
+     <p>I made this design in Fall 2021 for Project 2 in a graphic design course at UTD </p>
+     <a href='https://raywofforddesign.wordpress.com/project-2-poster/'> Project Page</a>
+	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
 	</Card>
+	<Card --bg-color='#E0887F' --text-color='white'>
+     <enhanced:img src='$lib/images/MkeyBusiness.jpg?' />	
+     <p>Monkey Business is a fictional music festival where all of the music has something to do with monkeys. Either in the lyrics of the song, or the band name, everything is monkey related. For the design I wanted to create something unique and interesting, that also went against the grain in terms of creating an “appealing”, while still following the basic rules. To accomplish this I went with the idea of creating something that was both slightly unsettling and interesting at the same time. </p>
+	 <p>I made this poster in Fall 2021 for Project 1 in a graphic design course at UTD </p>
+	 <a href='https://raywofforddesign.wordpress.com/project-1-poster/'> Projec Page </a>
+	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
+	 </Card>
 
 </Deck>
 
