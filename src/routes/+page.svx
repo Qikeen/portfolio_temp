@@ -11,6 +11,7 @@ list: [1, 2, 3, 4, "boo"]
 </head>
 
 <script>
+export const prerender = true;
 import {Deck, Card} from '$lib'
 let activee = 'web'
 

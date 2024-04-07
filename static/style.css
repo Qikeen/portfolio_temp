@@ -1,5 +1,6 @@
 /* This project uses Axist minimal (5kb) CSS library, https://ruanmartinelli.github.io/axist/ */
 
+/*! purgecss start ignore */
 :root {
     --primary: #1524d9;
     --light-primary: #2332ea;
@@ -348,3 +349,5 @@ abbr {
         cursor: help
     }
 }
+
+/*! purgecss end ignore */

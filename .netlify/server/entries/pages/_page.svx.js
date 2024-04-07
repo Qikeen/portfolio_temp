@@ -28,6 +28,7 @@ const metadata = {
   "list": [1, 2, 3, 4, "boo"]
 };
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  const prerender = true;
   let activee = "web";
   let web = true;
   let ani = false;
@@ -49,6 +50,8 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       print("error: nothing selected");
     }
   }
+  if ($$props.prerender === void 0 && $$bindings.prerender && prerender !== void 0)
+    $$bindings.prerender(prerender);
   $$result.css.add(css);
   {
     activeDeck(activee);
