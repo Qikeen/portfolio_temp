@@ -94,7 +94,7 @@ $: activeDeck(activee)
 
 .form-field {
     position: relative;
-    margin: 32px 0;
+    margin-top:5px;
 }
 .input-text {
     width: 100%;
@@ -108,7 +108,7 @@ $: activeDeck(activee)
  	transform: translateY(-24px);
 }
 
-input:placeholder-shown + label{
+input:placeholder-shown + label, textarea:placeholder-shown + label{
 	transform: translateY(0);
 }
 
@@ -137,6 +137,21 @@ input:placeholder-shown + label{
     cursor: pointer;
 }
 
+textarea{
+	resize:vertical ;
+	margin: 15px;
+	padding: 16px;
+	min-height: 100px;
+	max-height: 300px;
+}
+
+textarea + label{
+	top: 15px;
+}
+
+
+
+
 
 </style>
 
@@ -149,13 +164,14 @@ input:placeholder-shown + label{
 ## A little bit about me
 
 ### I'm a web developer, animator and graphic designer. 
-I also have experience in electronics, software development, 3d modeling, game dev, IT support, live audio mixing, event management, painting, construction, etc<sub>etc<sub>etc</sub></sub>, but let's just stick to these main 3 for now.
+I'm always trying to learn new things and improve on my current skillset. Because of that, I have experience in a variety of different fields. Over the past several years I've worked on everything from low voltage electronics and live sound mixing to woodworking and 3d printing. It is my belief that by drawing knowledge from multiple different sources I will be able to easily adapt to any situation and quickly gain insight on how things work, and throughout my experience I've found that to be true. 
+I've always been very interested in the cross-sections between creativity and technology, which is what draws me to web development, animation and graphic design. Each one explores a different aspect of this cross-section and requires a deep understanding of how it works. 
 
 ### I like applying traditional techniques to modern technology. 
-Traditional techniques relied on simplifying processes to the point that there is little room for error when diving into projects. This allowed the artist to focus on being creative, rather than focusing on fixing each and every mistake. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project. <sub><sup>not just fixing bugs</sup></sub>
+Traditional techniques relied on simplifying processes to the point that there is little room for error when working. This allowed the craftsmen to focus on being creative, rather than focusing on fixing each and every mistake that they made. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project, and ultimately deliver a quality product at a faster pace. <sub><sup>rather than spending all my time just fixing bugs</sup></sub>
 
 ### I turn ideas into powerful digital experiences. 
-I believe in creating things that stand out. Things that are different and unexpected. I tend to take the road less travelled and forge my own path, but I'll still occasionally take a look at the main road to make sure I'm going the right direction <sup><sub>lol</sub></sup>. I'll admit, sometimes it's good to follow trends, but other times i'm good just watching and taking inspiration for my own ideas. 
+I believe in creating things that stand out. Things that are different and unexpected. I tend to take the road less travelled and forge my own path, but I'll still occasionally take a look at the main road to make sure I'm going in the right direction <sup><sub>lol</sub></sup>. I'll admit, sometimes it's good to follow trends, but other times i'm good just watching and taking inspiration for my own ideas. 
 
 
 ## My Work 
@@ -241,18 +257,22 @@ I believe in creating things that stand out. Things that are different and unexp
 <br><br><br><br>
 
 <section class="contact-form">
-   <h1 class="title">Doesn't Work Yet</h1>
-   <form class="contact-form row">
+   <h1 class="title">Contact Me</h1>
+   <form class="contact-form row" name='contact' method='POST' data-netlify='true'>
       <div class="form-field col x-50">
-         <input id="name" class="input-text js-input" type="text" placeholder=' ' required>
+         <input id="name" class="input-text" type="text" placeholder=' ' required>
          <label class="label" for="name">Name</label>
       </div>
       <div class="form-field col x-50">
-         <input id="email" class="input-text js-input" type="email" placeholder=' ' required>
+         <input id="email" class="input-text" type="email" placeholder=' ' required>
          <label class="label" for="email">E-mail</label>
       </div>
       <div class="form-field col x-100">
-         <input id="message" class="input-text js-input" type="text" placeholder=' ' required>
+         <input id="subject" class="input-text" type="text" placeholder=' ' required>
+         <label class="label" for="message">Subject</label>
+      </div>
+      <div class="form-field col x-100 justify">
+         <textarea id="message" class="input-text" placeholder=' ' required></textarea>
          <label class="label" for="message">Message</label>
       </div>
       <div class="form-field col x-100 align-center">
