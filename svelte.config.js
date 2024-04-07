@@ -26,7 +26,7 @@ const config = {
 };
 
 export default {
-	config
+	config,
 	kit: {
 		// default options are shown
 		adapter: adapter({
