@@ -260,19 +260,19 @@ I believe in creating things that stand out. Things that are different and unexp
    <h1 class="title">Contact Me</h1>
    <form class="contact-form row" name='contact' data-netlify='true'>
       <div class="form-field col x-50">
-         <input id="name" class="input-text" type="text" placeholder=' ' required>
+         <input id="name" class="input-text" name='name' type="text" placeholder=' ' required>
          <label class="label" for="name">Name</label>
       </div>
       <div class="form-field col x-50">
-         <input id="email" class="input-text" type="email" placeholder=' ' required>
+         <input id="email" class="input-text" name='email' type="email" placeholder=' ' required>
          <label class="label" for="email">E-mail</label>
       </div>
       <div class="form-field col x-100">
-         <input id="subject" class="input-text" type="text" placeholder=' ' required>
+         <input id="subject" class="input-text" name='subject' type="text" placeholder=' ' required>
          <label class="label" for="message">Subject</label>
       </div>
       <div class="form-field col x-100 justify">
-         <textarea id="message" class="input-text" placeholder=' ' required></textarea>
+         <textarea id="message" class="input-text" name='message' placeholder=' ' required></textarea>
          <label class="label" for="message">Message</label>
       </div>
       <div class="form-field col x-100 align-center">
