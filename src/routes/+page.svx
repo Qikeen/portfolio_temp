@@ -11,7 +11,6 @@ list: [1, 2, 3, 4, "boo"]
 </head>
 
 <script>
-export const prerender = true;
 import {Deck, Card} from '$lib'
 let activee = 'web'
 
@@ -259,7 +258,7 @@ I believe in creating things that stand out. Things that are different and unexp
 
 <section class="contact-form">
    <h1 class="title">Contact Me</h1>
-   <form class="contact-form row" name='contact' method='POST' data-netlify='true'>
+   <form class="contact-form row" name='contact' data-netlify='true'>
       <div class="form-field col x-50">
          <input id="name" class="input-text" type="text" placeholder=' ' required>
          <label class="label" for="name">Name</label>
