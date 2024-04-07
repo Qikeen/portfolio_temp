@@ -104,11 +104,13 @@ $: activeDeck(activee)
     font-size: 18px;     
 }
 
-.input-text:focus + label, :user-valid + label, :user-invalid + label {
+.input-text:focus[type=text] + label, input:user-valid[type=text] + label, input:user-invalid[type=text] + label,
+textarea:user-valid + label, textarea:user-invalid + label, 
+.input-text:focus[type=email] + label, input:user-valid[type=email] + label, input:user-invalid[type=email] + label {
  	transform: translateY(-24px);
 }
 
-input:placeholder-shown + label, textarea:placeholder-shown + label{
+input:placeholder-shown[type=text] + label, textarea:placeholder-shown + label, input:placeholder-shown[type=email] + label{
 	transform: translateY(0);
 }
 
@@ -149,6 +151,14 @@ textarea + label{
 	top: 15px;
 }
 
+footer{
+	margin-bottom: -50px;
+}
+
+footer > h2{
+	padding-bottom: 10px;
+}
+
 
 
 
@@ -168,10 +178,10 @@ I'm always trying to learn new things and improve on my current skillset. Becaus
 I've always been very interested in the cross-sections between creativity and technology, which is what draws me to web development, animation and graphic design. Each one explores a different aspect of this cross-section and requires a deep understanding of how it works. 
 
 ### I like applying traditional techniques to modern technology. 
-Traditional techniques relied on simplifying processes to the point that there is little room for error when working. This allowed the craftsmen to focus on being creative, rather than focusing on fixing each and every mistake that they made. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project, and ultimately deliver a quality product at a faster pace. <sub><sup>rather than spending all my time just fixing bugs</sup></sub>
+Traditional techniques relied on simplifying processes to the point that there is little room for error when working. This allowed the craftsmen to focus on being creative, rather than focusing on fixing each and every mistake that they made. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project, ultimately delivering a quality final product at a faster pace. <sub><sup>rather than spending all my time just fixing bugs</sup></sub>
 
 ### I turn ideas into powerful digital experiences. 
-I believe in creating things that stand out. Things that are different and unexpected. I tend to take the road less travelled and forge my own path, but I'll still occasionally take a look at the main road to make sure I'm going in the right direction <sup><sub>lol</sub></sup>. I'll admit, sometimes it's good to follow trends, but other times i'm good just watching and taking inspiration for my own ideas. 
+I believe in creating things that stand out. Things that are different and unexpected. I tend to take the road less travelled and forge my own path, but sometimes I'll still take a look at the main road to make sure I'm going in the right direction <sup><sub>lol</sub></sup>. I'll admit, sometimes it's good to follow trends, but other times I'm comfortable just watching and taking inspiration for my own ideas. 
 
 
 ## My Work 
@@ -234,21 +244,22 @@ I believe in creating things that stand out. Things that are different and unexp
 	</Card>
 	<Card --bg-color='#D1C9B4'>
      <enhanced:img src='$lib/images/Vandhalia.jpg?' />	
-     <p>I based this project on the D&D campaign that I was playing in. In that campaign, the player characters were all students at an adventuring college. This is a catalog that a prospective student would get in the mail that gives some basic information about the college. All of the dates, currencies, and prices are as accurate as possible relative to the official content posted by Wizards of the Coast at the time.  <a href='https://raywofforddesign.wordpress.com/project-3-catalog/'> Project Page </a>
+     <p>I based this project on the D&D campaign that I was playing in. In that campaign, the player characters were all students at an adventuring college. This is a catalog that a prospective student would get in the mail that gives some basic information about the college. All of the dates, currencies, and prices are as accurate as possible relative to the official content posted by Wizards of the Coast at the time.</p>
+     <a href='https://raywofforddesign.wordpress.com/project-3-catalog/'> Project Page </a>
 	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
 	 </Card>
 	 <Card --bg-color='#000000' --text-color='white'>
      <enhanced:img src='$lib/images/2point5Gum.jpg?' />	
-     <p>For this project I created a package design for a pack of gum. I was inspired by the packaging for 5 gum and decided to create a spinoff called 2.5 gum. My favorite flavor of 5 gum is wintermint, which is called “ascent”, so I decided to create the opposite pf that for 2.5 gum. I chose to make a cinnamon flavor called “descent”.  </p>
+     <p>For this project I created a package design for a pack of gum. I was inspired by the packaging for 5 gum and decided to create a spinoff called 2.5 gum. My favorite flavor of 5 gum is wintermint, which is called “ascent”, so I decided to create the opposite of that for 2.5 gum. I chose to make a cinnamon flavor called “descent”.  </p>
      <p>I made this design in Fall 2021 for Project 2 in a graphic design course at UTD </p>
      <a href='https://raywofforddesign.wordpress.com/project-2-poster/'> Project Page</a>
 	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
 	</Card>
 	<Card --bg-color='#E0887F' --text-color='white'>
      <enhanced:img src='$lib/images/MkeyBusiness.jpg?' />	
-     <p>Monkey Business is a fictional music festival where all of the music has something to do with monkeys. In the lyrics, the band name, anything and  everything is monkey related. For the design I wanted to create something unique and interesting, that went against the grain in terms of creating an “appealing” design, while still following the basic rules. </p>
+     <p>Monkey Business is a fictional music festival where all of the music has something to do with monkeys. The lyrics, the band names, anything and everything is monkey related. For the design I wanted to create something unique and interesting that went against the grain in terms of creating an “appealing” design, while still following the basic rules. </p>
 	 <p>I made this poster in Fall 2021 for Project 1 in a graphic design course at UTD </p>
-	 <a href='https://raywofforddesign.wordpress.com/project-1-poster/'> Projec Page </a>
+	 <a href='https://raywofforddesign.wordpress.com/project-1-poster/'> Project Page </a>
 	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
 	 </Card>
 
@@ -257,7 +268,7 @@ I believe in creating things that stand out. Things that are different and unexp
 <br><br><br><br>
 
 <section class="contact-form">
-   <h1 class="title">Contact Me</h1>
+   <h2 class="title">Contact Me</h2>
    <form class="contact-form row" name='contact' data-netlify='true'>
       <div class="form-field col x-50">
          <input id="name" class="input-text" name='name' type="text" placeholder=' ' required>
@@ -269,10 +280,10 @@ I believe in creating things that stand out. Things that are different and unexp
       </div>
       <div class="form-field col x-100">
          <input id="subject" class="input-text" name='subject' type="text" placeholder=' ' required>
-         <label class="label" for="message">Subject</label>
+         <label class="label" for="subject">Subject</label>
       </div>
       <div class="form-field col x-100 justify">
-         <textarea id="message" class="input-text" name='message' placeholder=' ' required></textarea>
+         <textarea id="message" class="input-text" name='message' type='text' placeholder=' ' required></textarea>
          <label class="label" for="message">Message</label>
       </div>
       <div class="form-field col x-100 align-center">
@@ -280,3 +291,9 @@ I believe in creating things that stand out. Things that are different and unexp
       </div>
    </form>
 </section>
+
+<footer>
+
+## Rainn.ee
+Raine Wofford, Garland, TX
+</footer>
