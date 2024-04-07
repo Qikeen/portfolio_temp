@@ -1,1 +1,1 @@
-export cost prerender = true
+export const prerender = true
