@@ -160,13 +160,41 @@ footer > h2{
 }
 
 
+/* ---------------------------------  */
 
+.white{
+	color:white;
+	padding:15px;
+	translate:0 -15px;
 
+}
+
+.black{
+	color:darkslategray;
+	padding:15px;
+	translate:0 -15px;
+}
+
+.white:hover{
+	color:blue;
+	scale:1.5;
+	transition: scale 250ms ease;
+}
+
+.black:hover{
+	color: blue;
+	scale:1.5;
+	transition: scale 250ms ease;
+}
+
+.icon{
+	width:20px;
+}
 
 </style>
 
 
-# Hi I'm Raine <sub><sub><sub><sup>*also known as Ray*</sup></sub></sub></sub>
+# Hi I'm Raine <sub><sub><sub><sup><sup>*also known as Ray*</sup></sup></sub></sub></sub>
 
 ## Welcome to my website
 <sup><sup>~i'm working on making a better one, but this'll do for now~</sup></sup>
@@ -177,7 +205,7 @@ footer > h2{
 I'm always trying to learn new things and improve on my current skillset. Because of that, I have experience in a variety of different fields. Over the past several years I've worked on everything from low voltage electronics and live sound mixing to woodworking and 3d printing. It is my belief that by drawing knowledge from multiple different sources I will be able to easily adapt to any situation and quickly gain insight on how things work, and throughout my experience I've found that to be true. 
 I've always been very interested in the cross-sections between creativity and technology, which is what draws me to web development, animation and graphic design. Each one explores a different aspect of this cross-section and requires a deep understanding of how it works. 
 
-### I like applying traditional techniques to modern technology. 
+### I apply traditional techniques to modern technology. 
 Traditional techniques relied on simplifying processes to the point that there is little room for error when working. This allowed the craftsmen to focus on being creative, rather than focusing on fixing each and every mistake that they made. By spending more time simplifying processes in the initial phases, I am able to focus more on the unique and creative aspects of each project, ultimately delivering a quality final product at a faster pace. <sub><sup>rather than spending all my time just fixing bugs</sup></sub>
 
 ### I turn ideas into powerful digital experiences. 
@@ -198,15 +226,17 @@ I believe in creating things that stand out. Things that are different and unexp
      <enhanced:img src='$lib/images/Alchemythology.jpg?' />	
      <p>Alchemythology (al-chem-myth-ology)is a combination of the words alchemy and mythology, and refers to the fusion of mythical creatures with the purpose of creating something new, unique and oftentimes ridiculous.</p>
      <p>I created this project in 2020 for my internet studio II final at UTD. </p>
-     <a href='https://docs.google.com/presentation/d/1Pxy1dMqoJvHdZHQtplT4h8H4ubXnvueHJLo9VfeQjS0/edit?usp=sharing'> Pitch Deck</a>
+     <a class="icon" href='https://docs.google.com/presentation/d/1Pxy1dMqoJvHdZHQtplT4h8H4ubXnvueHJLo9VfeQjS0/edit?usp=sharing'><i class="fa-brands fa-google-drive fa-xl black" ></i></a>
 	</Card>
 	<Card --bg-color='#000000' --text-color='white'>
      <enhanced:img src='$lib/images/Skoolist.jpg?' />	
      <p>Students have a hard enough time keeping up with assignments without a massive pandemic going on. </p>
 	 <p>Skoolist aims to help students of all ages keep track of their assignments and classes, while also giving them a place to communicate with their peers.</p>
 	 <p>I created this app concept during Fall 2021 semester for a visual application design course at UTD </p>
-	 <a href='https://docs.google.com/presentation/d/1Yw1ZzjpwNSNBOpth5kVCpxmwBiorqyBFZIc8yB-ph9w/edit?usp=sharing'> Pitch Deck </a>
-	 <a href='https://projects.invisionapp.com/share/7NZCYL3AGHE#/screens/437104834'> Prototype </a>
+	 <span>
+	 <a class="icon" href='https://docs.google.com/presentation/d/1Yw1ZzjpwNSNBOpth5kVCpxmwBiorqyBFZIc8yB-ph9w/edit?usp=sharing'><i class="fa-brands fa-google-drive fa-xl white" ></i></a>
+	 <a class="icon" href='https://projects.invisionapp.com/share/7NZCYL3AGHE#/screens/437104834'> <i class="fa-solid fa-globe fa-xl white" ></i></a>
+	 </span>
 	 </Card>
 
 </Deck>
@@ -215,21 +245,21 @@ I believe in creating things that stand out. Things that are different and unexp
 	<Card --bg-color='#F4EFE9'>
      <enhanced:img src='$lib/images/DemoReel2023.jpg?' />	
      <p>This is my demo reel that I created during my final semester for the Level II Animation Certification from Dallas College.</p>
-     <a href='https://www.youtube.com/watch?v=qVN9xc6O4po'> YouTube</a>
+     <a class="icon" href='https://www.youtube.com/watch?v=qVN9xc6O4po'> <i class="fa-brands fa-youtube fa-xl black" ></i></a>
      <p> Music Used: 'Afterparty' by Don Toliver. I do not own the rights to the music used.</p>
 	</Card>
 	<Card --bg-color='#E0E0E0'>
      <enhanced:img src='$lib/images/PaperMusicAnim.jpg?' />	
      <p>This animation was created using construction paper that I cut into various shapes and placed on a green screen. I then edited the video and music using DaVinci Resolve.</p>
      <p>I made this animation for a creative video editing course at UTD. </p>
-	 <a href='https://drive.google.com/file/d/1gatJv0pPe8m2XnUy2Zd-eNLpnFVVKaML/view?usp=sharing'> Google Drive </a>
+	 <a class="icon" href='https://drive.google.com/file/d/1gatJv0pPe8m2XnUy2Zd-eNLpnFVVKaML/view?usp=sharing'> <i class="fa-brands fa-google-drive fa-xl black" ></i></a>
      <p>  Music Used: 'Lalala' by bbno$, Bassthoven by 'Kyle Exum'. I do not own the rights to the music used. </p>
 	 </Card>
 	 <Card --bg-color='#706E70' --text-color='white'>
      <enhanced:img src='$lib/images/Afterparty.jpg?' />	
      <p>Capybaras doing stuff with the song "Afterparty" behind it was a semi popular meme for a while in 2022, that's what inspired me to create this lyric video. </p>
      <p>I made this animation for an assignment in a video editing course at Dallas College. </p>
-	 <a href='https://drive.google.com/file/d/1qX_mA4KADkE13dtDCmmrwQCHZVhjjL_v/view?usp=sharing'> Google Drive </a>
+	 <a class="icon" href='https://drive.google.com/file/d/1qX_mA4KADkE13dtDCmmrwQCHZVhjjL_v/view?usp=sharing'> <i class="fa-brands fa-google-drive fa-xl white" ></i> </a>
      <p>  Music Used: 'Afterparty' by Don Toliver. I do not own the rights to the music used. </p>
 	 </Card>
 
@@ -240,27 +270,33 @@ I believe in creating things that stand out. Things that are different and unexp
      <enhanced:img src='$lib/images/LemurLemon.jpg?' />	
      <p>Lemur Lemonade was a semester long project to create a concept for a creative food truck business that was outside what you'd normally expect.For this project I created marketing materials, menus, vehicle wraps, and (most importantly) a logo for my fictional mobile lemonade stand.</p>
      <p>I worked on this project in Fall 2022 for a visual media course at UTD. </p>
-     <a href='https://www.behance.net/gallery/195635229/Lemur-Lemonade'> Behance</a>
+     <a class="icon" href='https://www.behance.net/gallery/195635229/Lemur-Lemonade'> <i class="fa-brands fa-behance fa-xl white" ></i></a>
 	</Card>
 	<Card --bg-color='#D1C9B4'>
      <enhanced:img src='$lib/images/Vandhalia.jpg?' />	
      <p>I based this project on the D&D campaign that I was playing in. In that campaign, the player characters were all students at an adventuring college. This is a catalog that a prospective student would get in the mail that gives some basic information about the college. All of the dates, currencies, and prices are as accurate as possible relative to the official content posted by Wizards of the Coast at the time.</p>
-     <a href='https://raywofforddesign.wordpress.com/project-3-catalog/'> Project Page </a>
-	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
+     <span>
+     <a class="icon" href='https://raywofforddesign.wordpress.com/project-3-catalog/'> <i class="fa-solid fa-file-image fa-xl black" ></i> </a>
+	 <a class="icon" href='https://raywofforddesign.wordpress.com/'> <i class="fa-solid fa-images fa-xl black" ></i> </a>
+	 </span>
 	 </Card>
 	 <Card --bg-color='#000000' --text-color='white'>
      <enhanced:img src='$lib/images/2point5Gum.jpg?' />	
      <p>For this project I created a package design for a pack of gum. I was inspired by the packaging for 5 gum and decided to create a spinoff called 2.5 gum. My favorite flavor of 5 gum is wintermint, which is called “ascent”, so I decided to create the opposite of that for 2.5 gum. I chose to make a cinnamon flavor called “descent”.  </p>
      <p>I made this design in Fall 2021 for Project 2 in a graphic design course at UTD </p>
-     <a href='https://raywofforddesign.wordpress.com/project-2-poster/'> Project Page</a>
-	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
+     <span>
+     <a href='https://raywofforddesign.wordpress.com/project-2-poster/'> <i class="fa-solid fa-file-image fa-xl white" ></i></a>
+	 <a href='https://raywofforddesign.wordpress.com/'> <i class="fa-solid fa-images fa-xl white" ></i> </a>
+	</span>
 	</Card>
 	<Card --bg-color='#E0887F' --text-color='white'>
      <enhanced:img src='$lib/images/MkeyBusiness.jpg?' />	
      <p>Monkey Business is a fictional music festival where all of the music has something to do with monkeys. The lyrics, the band names, anything and everything is monkey related. For the design I wanted to create something unique and interesting that went against the grain in terms of creating an “appealing” design, while still following the basic rules. </p>
 	 <p>I made this poster in Fall 2021 for Project 1 in a graphic design course at UTD </p>
-	 <a href='https://raywofforddesign.wordpress.com/project-1-poster/'> Project Page </a>
-	 <a href='https://raywofforddesign.wordpress.com/'> Course Portfolio </a>
+	<span>
+	 <a class="icon" href='https://raywofforddesign.wordpress.com/project-1-poster/'> <i class="fa-solid fa-file-image fa-xl white" ></i> </a>
+	 <a class="icon" href='https://raywofforddesign.wordpress.com/'> <i class="fa-solid fa-images fa-xl white" ></i> </a>
+	</span>
 	 </Card>
 
 </Deck>
